@@ -1,4 +1,4 @@
-'''list = [8, 10, 6, 2, 4]
+list = [8, 10, 6, 2, 4]
 swapped = True
 while swapped :
     swapped = False
@@ -7,4 +7,4 @@ while swapped :
             swapped = True
             list[i], list[i+1] = list[i+1], list[i]
 
-print(list)'''
+print(list)

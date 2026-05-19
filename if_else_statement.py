@@ -1,4 +1,4 @@
-'''number1 = int(input("Enter the first number : "))
+number1 = int(input("Enter the first number : "))
 number2 = int(input("Enter the second number : "))
 
 if number1 > number2:
@@ -6,7 +6,7 @@ if number1 > number2:
 else:
     larger_number = number2
 
-print("The largest number is : ", larger_number)'''
+print("The largest number is : ", larger_number)
 
 number1 = int(input("Enter the first number : "))
 number2 = int(input("Enter the second number : "))

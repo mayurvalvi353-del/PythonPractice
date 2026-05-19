@@ -1,28 +1,28 @@
 #1
-'''for i in range(1,51):
+for i in range(1,51):
     if i == 50 :
         print(i, end="")
     else :
-        print(i, end=", ")'''
+        print(i, end=", ")
 
 #2
-'''for i in range(1,51):
+for i in range(1,51):
     if i % 2 == 0 and i != 50:
         print("t", end=", ")
     elif i == 50 :
         print(i, end=" ")
     else :
-        print(i, end=", ")'''
+        print(i, end=", ")
 
 
 #3
-'''for i in range(1, 51):
+for i in range(1, 51):
     if i % 3 == 0 :
         print("t", end=", ")
     elif i == 50 :
         print(i, end=" ")
     else :
-        print(i, end=", ")'''
+        print(i, end=", ")
 
 
 #4
