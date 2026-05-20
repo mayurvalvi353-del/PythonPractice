@@ -1,4 +1,4 @@
-my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+'''my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for iterator in range(len(my_list)):
     print(my_list[iterator])
 
@@ -47,4 +47,7 @@ list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 print(list)
 list[4], list[1] = list[1], list[4]
 print(list)
+'''
+
+
 
