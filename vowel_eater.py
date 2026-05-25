@@ -1,3 +1,5 @@
+#Count the number of Unique and Repeated characters
+
 word = input("Enter the word : ")
 word = word.upper()
 word_without_vowels = ""

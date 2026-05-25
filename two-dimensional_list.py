@@ -1,4 +1,4 @@
-'''board = []
+board = []
 for i in range(8):
     row = ["EMPTY" for i in range(8)]
     board.append(row)
@@ -26,9 +26,9 @@ print("-----------------------------")
 
 for index in board:
     print(index)
-'''
+
 #Multi-Dimensional List
-'''temps = [[0.0 for h in range(24)] for d in range(31)]
+temps = [[0.0 for h in range(24)] for d in range(31)]
 
 temp1 = 19
 temp2 = 32
@@ -61,9 +61,9 @@ hot_days = 0
 for day in temps:
     if day[11] > 20.0 :
         hot_days += 1
-print(hot_days, "days were hot days in the month.")'''
+print(hot_days, "days were hot days in the month.")
 
-#3-Dimensional list
+#Three-Dimensional list
 rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
 print(rooms)
 
