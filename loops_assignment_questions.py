@@ -41,18 +41,7 @@ while number != 0:
 print(count)
 
 #8. ⁠Check if the given string is a palindrome
-text = input("Enter the word : ")
-it_is = True
 
-for i in range(len(text) // 2):
-    if text[i] != text[-(i+1)]:
-        it_is = False
-        break
-
-if it_is :
-    print("Palindrome")
-else :
-    print("Not Palidrome")
 
 #9. Program that accepts a word from the user and reverses it
 word = input("Enter the word : ")

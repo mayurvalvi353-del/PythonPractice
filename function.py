@@ -1,4 +1,4 @@
-def message():                #Defining the function
+'''def message():                #Defining the function
     print("Enter a value : ")
 
 message()          #Invoking / Calling the function 
@@ -123,3 +123,68 @@ def strange_list_fun(n):
     return strange_list
 
 print(strange_list_fun(5))
+
+
+def my_function():
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+
+def mult(x):
+    var = 7
+    return x * var
+var = 3
+print(mult(7))
+
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable?", var)
+
+var = 1
+my_function()
+print(var)
+
+var = 2
+print(var)
+
+def return_var():
+    global var
+    var = 5
+    return var
+
+print(return_var())
+print(var)
+
+def my_function(n):
+    print("I got", n)
+    n += 1
+    print("I have", n)
+
+var = 1
+my_function(var)
+print(var)
+
+def my_function(my_list_1):
+    print("Print #1 :", my_list_1)
+    print("Print #2 :", my_list_2)
+    my_list_1 = [0, 1]
+    print("Print #3 :", my_list_1)
+    print("Print #4 :", my_list_2)
+
+my_list_2 = [2,3]
+my_function(my_list_2)
+print("Print #5 :", my_list_2)
+
+def my_function(my_list_1):
+    print("Print #1 :", my_list_1)
+    print("Print #2 :", my_list_2)
+    del my_list_1[0]
+    print("Print #3 :", my_list_1)
+    print("Print #4 :", my_list_2)
+
+my_list_2 = [2,3]
+my_function(my_list_2)
+print("Print #5 :", my_list_2)'''
