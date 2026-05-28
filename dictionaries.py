@@ -67,3 +67,54 @@ print(pol_eng_dictionary)
 
 pol_eng_dictionary.popitem()
 print(pol_eng_dictionary)
+
+#Membership operators(in and not in) in Dictionary
+pol_eng_dictionary = {
+    "zamek" : "castle",
+    "woda" : "water",
+    "gleba" : "soil"
+}
+
+if "zamek1" in pol_eng_dictionary:
+    print("Yes! zamek is present in dictionary")
+else :
+    print("No! zamek1 is not present in dictionary")
+
+#clear() method in dictionary
+print(pol_eng_dictionary)
+print(len(pol_eng_dictionary))
+del pol_eng_dictionary["zamek"]
+print(pol_eng_dictionary)
+print(len(pol_eng_dictionary))
+
+pol_eng_dictionary.clear()
+print(pol_eng_dictionary)
+print(len(pol_eng_dictionary))
+
+del pol_eng_dictionary
+print(pol_eng_dictionary)
+
+sd = {}
+while True :
+    name = input("Enter student's name : ")
+    if name == "":
+        break
+    score = int(input(f"Enter {name}'s score : "))
+
+    if score not in range(1, 11):
+        break
+    if name in sd :
+        sd[name] += (score, )
+    else :
+        sd[name] = (score, )
+
+
+print(sd)
+
+for name, mark in sd.items():
+    sum = 0
+    for m in mark :
+        sum += m
+    print(name, "->", sum/len(mark))
+
+
