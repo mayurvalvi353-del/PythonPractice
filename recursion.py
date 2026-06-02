@@ -1,4 +1,4 @@
-'''def countDown(number):
+def countDown(number):
     print(number)
     if number == 0 :
         return
@@ -9,7 +9,7 @@
 
 print("Starting Recursion")
 countDown(5)
-print("Finished Recursion")'''
+print("Finished Recursion")
 
 def factorial(number):
     if number <= 0 :

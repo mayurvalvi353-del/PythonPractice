@@ -1,4 +1,4 @@
-'''def message():                #Defining the function
+def message():                #Defining the function
     print("Enter a value : ")
 
 message()          #Invoking / Calling the function 
@@ -187,4 +187,4 @@ def my_function(my_list_1):
 
 my_list_2 = [2,3]
 my_function(my_list_2)
-print("Print #5 :", my_list_2)'''
+print("Print #5 :", my_list_2)
