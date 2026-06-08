@@ -1,4 +1,4 @@
-'''#Class
+#Class
 class ThisIsMyFirstClass :
     name = "Mayur"
     age = 21
@@ -245,7 +245,7 @@ my_tracked_vehicle = TrackedVehicle()
 for obj in [my_vehicle, my_land_vehicle, my_tracked_vehicle] :
     for cls in [Vehicle, LandVehicle, TrackedVehicle] :
         print(isinstance(obj, cls), end = "\t")
-    print()'''
+    print()
 
 #is operator
 class SampleClass :
