@@ -1,4 +1,4 @@
-#Class
+'''#Class
 class ThisIsMyFirstClass :
     name = "Mayur"
     age = 21
@@ -85,6 +85,93 @@ class Star :
 sun = Star("Sun", "Milky Way")
 print(sun)
 
+#Class Variable
+class ExampleClass :
+    counter = 0
+    def __init__(self, val = 1):
+        self.__first = val
+        ExampleClass.counter += 1
+
+example_object_1 = ExampleClass()
+example_object_2 = ExampleClass(2)
+example_object_3 = ExampleClass(4)
+
+print(example_object_1.__dict__, example_object_1.counter)
+print(example_object_2.__dict__, example_object_2.counter)
+print(example_object_3.__dict__, example_object_3.counter)
+
+class ExampleClass :
+    def __init__(self, val = 1):
+        if val % 2 != 0 :
+            self.a = 1
+        else :
+            self.b = 1
+
+example_object = ExampleClass(4)
+
+try :
+    print("a = ", example_object.a)
+except AttributeError :
+    try :
+     print("b = ", example_object.b)
+    except AttributeError :
+        print("The error has occured! Silently passing it!")
+
+#Has-attribute function
+class ExampleClass :
+    a = 1
+    def __init__(self, val = 1):
+        if val % 2 != 0 :
+            self.a = 1
+        else :
+            self.b = 1
+
+example_object = ExampleClass(8)
+
+if hasattr(example_object, 'a') :
+    print("a = ", example_object.a)
+
+if hasattr(example_object, 'b') :
+    print("b = ", example_object.b)
+
+print(hasattr(ExampleClass, 'b'))
+print(hasattr(ExampleClass, 'a'))
+
+class Python :
+    population = 1
+    victims = 0
+    def __init__(self):
+        self.length_ft = 3
+        self.__venomous = False
+
+myObj = Python()
+print("myObj.population : ", myObj.population)
+print("myObj.victims : ", myObj.victims)
+print("myObj.length_ft : ", myObj.length_ft)
+print("myObj.__venomous : ", myObj._Python__venomous)
+
+version_2 = Python()
+print(hasattr(version_2, 'constrictor'))
+
+#Name Mangling 
+class Classy :
+    def visible(self):
+        print("visible")
+
+    def __hidden(self):
+        print("hidden")
+
+obj = Classy()
+obj.visible()
+try :
+    obj.__hidden()
+except :
+    print("failed")
+obj._Classy__hidden()
+
+print(type(obj))
+print(type(obj).__name__)
+
 #Inheritance Example
 class Vehicle :
     pass
@@ -141,3 +228,42 @@ obj = Level3()
 print(obj.variable_1, obj.var_1, obj.fun_1())
 print(obj.variable_2, obj.var_2, obj.fun_2())
 print(obj.variable_3, obj.var_3, obj.fun_3())
+
+class Vehicle :
+    pass
+
+class LandVehicle(Vehicle) :
+    pass
+
+class TrackedVehicle(LandVehicle):
+    pass
+
+my_vehicle = Vehicle()
+my_land_vehicle = LandVehicle()
+my_tracked_vehicle = TrackedVehicle()
+
+for obj in [my_vehicle, my_land_vehicle, my_tracked_vehicle] :
+    for cls in [Vehicle, LandVehicle, TrackedVehicle] :
+        print(isinstance(obj, cls), end = "\t")
+    print()'''
+
+#is operator
+class SampleClass :
+    def __init__(self, val):
+        self.val = val
+
+object_1 = SampleClass(0)
+object_2 = SampleClass(2)
+object_3 = object_1
+object_3.val += 1
+
+print(object_1 is object_2)
+print(object_2 is object_3)
+print(object_3 is object_1)
+print(object_1.val, object_2.val, object_3.val)
+
+string_1 = "Mary had a little "
+string_2 = "Mary had a little lamb"
+string_1 += "lamb"
+
+print(string_1 == string_2, string_1 is string_2)
