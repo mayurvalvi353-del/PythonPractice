@@ -388,3 +388,4 @@ def do_the_division(mine):
         raise ZeroDivisionError("some bad news")
     
 do_the_division(False)
+
