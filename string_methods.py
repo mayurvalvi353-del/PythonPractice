@@ -77,14 +77,23 @@ print(f'Price : Rs.{price} | GST : Rs.{price*gst:.2f} | Total : Rs.{price*(1+gst
 
 string = "Hello, How are you doing today ?"
 #Count Vowels in the string
+vowels = 'aeiouAEIOU'
+count = 0
+for i in string :
+    if i in vowels :
+        count += 1
+print("Vowels count :", count)
+
 #Print you from the string
+print(string[15:19])
+
 #Print the string in reverse order
+print(string[::-1])
+
 non_palin, palin = 'abcdef', 'axttxa'
 #Check if the string is palindrome or not
-vowels_count = string.count('a') + string.count('e') + string.count('i') + string.count('o') + string.count('u')
-print("Count of the vowels : ",vowels_count)
-print(string[15:19])
-print(string[::-1])
+print("Is non_palin is palindrome :",non_palin == non_palin[::-1])  
+print("Is palin is palindrome :",palin == palin[::-1])          
 
 
 
