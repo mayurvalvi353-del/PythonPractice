@@ -13,6 +13,26 @@ df = pd.DataFrame({
 })
 
 plt.figure(figsize = (10,4))
+#Histogram
 sns.histplot(df['marks'], bins = 20, kde = True, color = 'silver')
 plt.title('Distribution of Student Marks')
 plt.show()
+
+#Box Plot
+sns.boxplot(data = df, x = 'city', y = 'marks', palette = 'Set2')
+plt.title('Marks Distribution by City')
+plt.show()
+
+#Correlation Heatmap 
+plt.figure(figsize = (5,4))
+sns.heatmap(df[['marks', 'study_hours']].corr(), annot=True, cmap = 'coolwarm', vmin = -1, vmax = 1)
+plt.title('Correlation matrix')
+plt.show()
+
+#Pair Plot
+sns.pairplot(df[['marks', 'study_hours']], diag_kind= 'kde')
+plt.show()
+
+
+
+
