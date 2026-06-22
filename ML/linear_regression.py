@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
+
 study = [1,2,3,4,5,6,7,8,9,10,2.5,4.5,6.5,8.5]
 marks = [25,38,52,65,71,78,85,89,93,96,43,68,82,91]
 
